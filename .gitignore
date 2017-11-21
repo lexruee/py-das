@@ -1,0 +1,7 @@
+.cache/
+*.pyc
+*.egg-info/
+*.svg
+*.png
+*.gv
+*.swp
