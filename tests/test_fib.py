@@ -36,3 +36,9 @@ def test_fib_mrec():
 def test_fib_iter():
     for n, r in EXAMPLES:
         assert fib.fib(n, rec=False) == r
+
+def test_fib_gen():
+    fn = fib.fib_gen()
+    for _, r in EXAMPLES:
+        assert next(fn) == r
+

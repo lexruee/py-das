@@ -49,6 +49,16 @@ def fib_iter(n):
             fn1, fn2 = fn1 + fn2, fn1
         return fn1
 
+def fib_gen():
+    def gen():
+        a, b = 0, 1
+        while True:
+            yield b
+            a, b = b, a + b
+
+    return gen()
+
+
 if __name__ == '__main__':
     import sys
     if len(sys.argv) < 3:
