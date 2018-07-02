@@ -11,5 +11,5 @@ def test_fermat_number():
         assert fermat.fermat_number(i) == fnum
 
 def test_fermat_numbers():
-    for fn in fermat.fermat_numbers(5)
+    for fn in fermat.fermat_numbers(5):
         assert fn in NUMBERS
